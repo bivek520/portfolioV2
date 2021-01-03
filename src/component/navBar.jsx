@@ -32,10 +32,12 @@ const NavBar = () => {
 					}
 				>
 					<Navigation>
-						<Link to='/education'>Education</Link>
-						<Link to='/skills'>Skills</Link>
-						<Link to='/project'>Project</Link>
-						<Link to='/aboutMe'>About Me</Link>
+						<div>
+							<Link to='/education'>Education</Link>
+							<Link to='/skills'>Skills</Link>
+							<Link to='/project'>Project</Link>
+							<Link to='/aboutMe'>About Me</Link>
+						</div>
 					</Navigation>
 				</Drawer>
 				<Content>
