@@ -36,19 +36,6 @@ class LandingPage extends Component {
 						</div>
 					</Grid>
 				</div>
-				<div> Item visible </div>
-				<div> Item visible </div>
-				<div> Item visible </div>
-				<div> Item visible </div>
-
-				<div> Item NOT visible </div>
-				<div> Item NOT visible </div>
-				<div> Item NOT visible </div>
-				<div> Item NOT visible </div>
-				<div> Item NOT visible </div>
-				<div> Item NOT visible </div>
-				<div> Item NOT visible </div>
-				<div> Item NOT visible </div>
 			</React.Fragment>
 		);
 	}
