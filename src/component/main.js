@@ -8,11 +8,11 @@ import LandingPage from './landingPage';
 const Main = () => {
 	return (
 		<Switch>
-			<Route exact path='/' component={LandingPage} />
 			<Route path='/aboutMe' component={AboutMe} />
 			<Route path='/education' component={Education} />
 			<Route path='/project' component={Project} />
 			<Route path='/skills' component={Skills} />
+			<Route path='/' component={LandingPage} />
 		</Switch>
 	);
 };
