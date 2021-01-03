@@ -1,23 +1,25 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import img from '../img/profilePic.png';
 
 class LandingPage extends Component {
 	render() {
+		console.log(img);
 		return (
 			<React.Fragment>
 				<div style={{ overflow: 'auto' }}>
 					<Grid className='landing-grid'>
 						<Cell col={12}>
 							<img
-								src='https://avatars0.githubusercontent.com/u/57966410?s=460&u=d30c6289baa567f5ca27d55afbd8683bed955a2a&v=4'
+								// src='https://avatars0.githubusercontent.com/u/57966410?s=460&u=d30c6289baa567f5ca27d55afbd8683bed955a2a&v=4'
+								src={img}
 								alt='Profile_pic'
 								className='profile-img'
 							/>
 						</Cell>
 						<div className='banner-text'>
 							<h1>Bivek Shrestha</h1>
-							<i class='fab fa-github'></i>
 
 							<hr />
 
