@@ -6,11 +6,7 @@ class Project extends Component {
 	render() {
 		return (
 			<div>
-				Projects
-				<div>
-					<FontAwesomeIcon icon={['fab', 'linkedin']} size='10x' />
-					Your <FontAwesomeIcon icon={['fab', 'github']} /> is hot and ready!
-				</div>
+				<h1>Projects</h1>
 			</div>
 		);
 	}
