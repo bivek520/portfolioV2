@@ -2,15 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import Main from './main';
+import '../App.css';
 
 const NavBar = () => {
 	return (
 		<div className='Nav-bar'>
 			<Layout fixedHeader>
 				<Header
+					className='header-color'
 					title={
-						<span>
-							<strong>Bivek Shrestha</strong>
+						<span className='span_title'>
+							<Link to='/'>
+								<strong>Bivek Shrestha</strong>
+							</Link>
 						</span>
 					}
 				>
