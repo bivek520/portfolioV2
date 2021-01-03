@@ -4,10 +4,11 @@ import AboutMe from './aboutMe';
 import Education from './education';
 import Project from './project';
 import Skills from './skills';
-
+import LandingPage from './landingPage';
 const Main = () => {
 	return (
 		<Switch>
+			<Route exact path='/' component={LandingPage} />
 			<Route path='/aboutMe' component={AboutMe} />
 			<Route path='/education' component={Education} />
 			<Route path='/project' component={Project} />
