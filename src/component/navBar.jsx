@@ -11,33 +11,31 @@ const NavBar = () => {
 				<Header
 					className='header-color'
 					title={
-						<Link style={{ textDecoration: 'none', color: 'white' }} to='/'>
+						<Link style={{ textDecoration: 'none', color: 'white' }} to='/portfolioV2'>
 							Bivek Shrestha
 						</Link>
 					}
 					scroll
 				>
 					<Navigation>
-						<Link to='/education'>Education</Link>
-						<Link to='/skills'>Skills</Link>
-						<Link to='/project'>Project</Link>
-						<Link to='/aboutMe'>About Me</Link>
+						<Link to='/portfolioV2/education'>Education</Link>
+						<Link to='/portfolioV2/skills'>Skills</Link>
+						<Link to='/portfolioV2/project'>Project</Link>
+						<Link to='/portfolioV2/aboutMe'>About Me</Link>
 					</Navigation>
 				</Header>
 				<Drawer
 					title={
-						<Link style={{ textDecoration: 'none', color: 'black' }} to='/'>
+						<Link style={{ textDecoration: 'none', color: 'black' }} to='/portfolioV2'>
 							Bivek Shrestha
 						</Link>
 					}
 				>
 					<Navigation>
-						<div>
-							<Link to='/education'>Education</Link>
-							<Link to='/skills'>Skills</Link>
-							<Link to='/project'>Project</Link>
-							<Link to='/aboutMe'>About Me</Link>
-						</div>
+						<Link to='/portfolioV2/education'>Education</Link>
+						<Link to='/portfolioV2/skills'>Skills</Link>
+						<Link to='/portfolioV2/project'>Project</Link>
+						<Link to='/portfolioV2/aboutMe'>About Me</Link>
 					</Navigation>
 				</Drawer>
 				<Content>
