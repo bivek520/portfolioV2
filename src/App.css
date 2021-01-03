@@ -24,6 +24,19 @@
 	height: 100%;
 }
 
+.social-links {
+	display: flex;
+	justify-content: space-between;
+	width: 20%;
+	margin: auto;
+}
+
+.social-links a {
+	color: white;
+	font-size: 4em;
+	padding: 4px;
+}
+
 .profile-img {
 	border-radius: 50%;
 	height: 400px;

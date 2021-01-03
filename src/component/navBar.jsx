@@ -6,17 +6,16 @@ import '../App.css';
 
 const NavBar = () => {
 	return (
-		<div className='Nav-bar'>
-			<Layout fixedHeader>
+		<div className='header-color'>
+			<Layout>
 				<Header
 					className='header-color'
 					title={
-						<span className='span_title'>
-							<Link to='/'>
-								<strong>Bivek Shrestha</strong>
-							</Link>
-						</span>
+						<Link style={{ textDecoration: 'none', color: 'white' }} to='/'>
+							Bivek Shrestha
+						</Link>
 					}
+					scroll
 				>
 					<Navigation>
 						<Link to='/education'>Education</Link>
@@ -25,7 +24,13 @@ const NavBar = () => {
 						<Link to='/aboutMe'>About Me</Link>
 					</Navigation>
 				</Header>
-				<Drawer title='Bivek Shrestha'>
+				<Drawer
+					title={
+						<Link style={{ textDecoration: 'none', color: 'black' }} to='/'>
+							Bivek Shrestha
+						</Link>
+					}
+				>
 					<Navigation>
 						<Link to='/education'>Education</Link>
 						<Link to='/skills'>Skills</Link>
@@ -33,8 +38,10 @@ const NavBar = () => {
 						<Link to='/aboutMe'>About Me</Link>
 					</Navigation>
 				</Drawer>
-				<Main />
-				<Content />
+				<Content>
+					<div className='page-content' />
+					<Main />
+				</Content>
 			</Layout>
 		</div>
 	);
