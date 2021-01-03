@@ -42,6 +42,9 @@
 	height: 600px;
 	padding-top: 5em;
 }
+.projects-grid {
+	display: flex;
+}
 
 .banner-text {
 	background-color: black;
