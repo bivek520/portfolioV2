@@ -3,7 +3,9 @@ import ProjectCard from './common/projectCard';
 import { getProject } from '../services/projectService';
 import '../App.css';
 class Project extends Component {
-	state = {};
+	state = {
+		projects: [],
+	};
 	componentDidMount() {
 		const projects = getProject();
 		this.setState({ projects });
