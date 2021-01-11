@@ -1,49 +1,39 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
-import Main from './main';
+import { Link, NavLink } from 'react-router-dom';
 import '../App.css';
+import './navBar.css';
 
 const NavBar = () => {
 	return (
-		<div className='header-color'>
-			<Layout>
-				<Header
-					className='header-color'
-					title={
-						<Link style={{ textDecoration: 'none', color: 'white' }} to='/portfolioV2'>
-							Bivek Shrestha
-						</Link>
-					}
-					scroll
-				>
-					<Navigation>
-						<Link to='/portfolioV2/education'>Education</Link>
-						<Link to='/portfolioV2/skills'>Skills</Link>
-						<Link to='/portfolioV2/project'>Project</Link>
-						<Link to='/portfolioV2/aboutMe'>About Me</Link>
-					</Navigation>
-				</Header>
-				<Drawer
-					title={
-						<Link style={{ textDecoration: 'none', color: 'black' }} to='/portfolioV2'>
-							Bivek Shrestha
-						</Link>
-					}
-				>
-					<Navigation>
-						<Link to='/portfolioV2/education'>Education</Link>
-						<Link to='/portfolioV2/skills'>Skills</Link>
-						<Link to='/portfolioV2/project'>Project</Link>
-						<Link to='/portfolioV2/aboutMe'>About Me</Link>
-					</Navigation>
-				</Drawer>
-				<Content>
-					<div className='page-content' />
-					<Main />
-				</Content>
-			</Layout>
-		</div>
+		<nav className='navbar navbar-expand-lg navbar-light bg-light sticky-top'>
+			<Link className='navbar-brand' to='/portfolioV2'>
+				Bivek Shrestha
+			</Link>
+			<button
+				className='navbar-toggler'
+				type='button'
+				data-toggle='collapse'
+				data-target='#navbarNavAltMarkup'
+				aria-controls='navbarNavAltMarkup'
+				aria-expanded='false'
+				aria-label='Toggle navigation'
+			>
+				<span className='navbar-toggler-icon' />
+			</button>
+			<div className='collapse navbar-collapse' id='navbarNavAltMarkup'>
+				<div className='navbar-nav'>
+					<NavLink className='nav-item nav-link' to='/portfolioV2/education'>
+						Education
+					</NavLink>
+					<NavLink className='nav-item nav-link' to='/portfolioV2/project'>
+						Project
+					</NavLink>
+					<NavLink className='nav-item nav-link' to='/portfolioV2/aboutMe'>
+						About Me
+					</NavLink>
+				</div>
+			</div>
+		</nav>
 	);
 };
 
