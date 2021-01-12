@@ -17,9 +17,9 @@ function App() {
 				<NavBar />
 
 				<Switch>
-					<Route path='/portfolioV2/aboutMe' component={AboutMe} />
-					<Route path='/portfolioV2/education' component={Education} />
-					<Route path='/portfolioV2/project' component={Project} />
+					<Route path='/aboutMe' component={AboutMe} />
+					<Route path='/education' component={Education} />
+					<Route path='/project' component={Project} />
 					<Route path='/' component={LandingPage} />
 				</Switch>
 			</main>
