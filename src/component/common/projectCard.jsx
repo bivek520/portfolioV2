@@ -1,36 +1,25 @@
-import { CardTitle, CardText, CardActions, Card } from 'react-mdl';
-import i from '../../img/splitApp.png';
+import x from '../../img/check_your_air.png';
 
-const ProjectCard = ({ title, text, githubURL, LiveDemoUrl, imgLink }) => {
-	const img = imgLink
-		? `url(${imgLink})  center / cover`
-		: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover';
-	console.log(i, 'this is the image');
-
+const ProjectCard = ({ title, text, githubURL, LiveDemoUrl, img }) => {
 	return (
-		<Card shadow={6} style={{ minWidth: '450', margin: 'auto' }}>
-			<CardTitle
-				style={{
-					color: 'black',
-					height: '176px',
-					background: img,
-				}}
-			></CardTitle>
-			<CardText>
-				<h5>{title}</h5>
-				{text}
-			</CardText>
-			<CardActions border>
-				<a href={githubURL} target='_blank' rel='noopener noreferrer' className='btn btn-primary m-2'>
-					GitHub
-				</a>
-				{LiveDemoUrl && (
-					<a href={LiveDemoUrl} target='_blank' rel='noopener noreferrer' className='btn btn-primary  m-2'>
-						Live Demo
+		<div className='card h-100'>
+			<img src={process.env.PUBLIC_URL + `/images/${img}`} className='card-img-top .img-fluid' alt='...' />
+			<div className='card-body '>
+				<h5 className='card-title'>{title}</h5>
+				<p className='card-text'>{text}</p>
+
+				<div classNameName='align-self-end'>
+					<a href={githubURL} rel='noreferrer' target='_blank' className='btn btn-primary'>
+						GitHub
 					</a>
-				)}
-			</CardActions>
-		</Card>
+					{LiveDemoUrl && (
+						<a href={LiveDemoUrl} rel='noreferrer' target='_blank' className='btn btn-primary mx-2'>
+							Live Demo
+						</a>
+					)}
+				</div>
+			</div>
+		</div>
 	);
 };
 

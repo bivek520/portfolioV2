@@ -14,16 +14,16 @@ class Project extends Component {
 		const data = this.state.projects;
 		if (data) {
 			const projects = data.map((item) => {
-				const { _id, title, description, githubURL, liveDemoUrl, imgLink } = item;
+				const { _id, title, description, githubURL, liveDemoUrl, img } = item;
 				return (
-					<div key={_id} className='col mb-3'>
+					<div key={_id} className='col-sm-3 pb-4'>
 						{
 							<ProjectCard
 								title={title}
 								text={description}
 								githubURL={githubURL}
 								LiveDemoUrl={liveDemoUrl}
-								imgLink={imgLink}
+								img={img}
 							/>
 						}
 					</div>
@@ -35,9 +35,9 @@ class Project extends Component {
 	}
 	render() {
 		return (
-			<div className='container'>
+			<div>
 				<h2 className='expand-lg'>Projects</h2>
-				<div className='row mb-3 '>{this.renderProjects()}</div>
+				<div className='row '>{this.renderProjects()}</div>
 			</div>
 		);
 	}

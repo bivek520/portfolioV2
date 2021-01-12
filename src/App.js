@@ -13,8 +13,9 @@ initFontAwesome();
 function App() {
 	return (
 		<React.Fragment>
-			<NavBar />
 			<main className='container'>
+				<NavBar />
+
 				<Switch>
 					<Route path='/portfolioV2/aboutMe' component={AboutMe} />
 					<Route path='/portfolioV2/education' component={Education} />
