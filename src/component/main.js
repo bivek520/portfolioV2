@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import AboutMe from './aboutMe';
 import Education from './education';
-import Project from './project';
+import Project from './projects';
 
 import LandingPage from './landingPage';
 const Main = () => {

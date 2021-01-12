@@ -1,5 +1,5 @@
 import { CardTitle, CardText, CardActions, Card } from 'react-mdl';
-import i from '../../img/poker.png';
+import i from '../../img/splitApp.png';
 
 const ProjectCard = ({ title, text, githubURL, LiveDemoUrl, imgLink }) => {
 	const img = imgLink
@@ -15,11 +15,11 @@ const ProjectCard = ({ title, text, githubURL, LiveDemoUrl, imgLink }) => {
 					height: '176px',
 					background: img,
 				}}
-			>
-				{/* <img src={imgLink} alt='Girl in a jacket' height='176' /> */}
-				{title}
-			</CardTitle>
-			<CardText>{text}</CardText>
+			></CardTitle>
+			<CardText>
+				<h5>{title}</h5>
+				{text}
+			</CardText>
 			<CardActions border>
 				<a href={githubURL} target='_blank' rel='noopener noreferrer' className='btn btn-primary m-2'>
 					GitHub

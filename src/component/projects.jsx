@@ -36,7 +36,7 @@ class Project extends Component {
 	render() {
 		return (
 			<div className='container'>
-				<h2>Projects</h2>
+				<h2 className='expand-lg'>Projects</h2>
 				<div className='row mb-3 '>{this.renderProjects()}</div>
 			</div>
 		);
