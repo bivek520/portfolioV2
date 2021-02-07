@@ -4,8 +4,7 @@ import { initFontAwesome } from './component/fontAwesome';
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
 
-import About from './component/about';
-import Education from './component/education';
+import Resume from './component/resume';
 import Project from './component/projects';
 import LandingPage from './component/landingPage';
 
@@ -15,10 +14,8 @@ function App() {
 		<React.Fragment>
 			<main className='container'>
 				<NavBar />
-
 				<Switch>
-					<Route path='/about' component={About} />
-					<Route path='/education' component={Education} />
+					<Route path='/resume' component={Resume} />
 					<Route path='/project' component={Project} />
 					<Route path='/' component={LandingPage} />
 				</Switch>

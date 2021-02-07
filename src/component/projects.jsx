@@ -16,7 +16,7 @@ class Project extends Component {
 			const projects = data.map((item) => {
 				const { _id, title, description, githubURL, liveDemoUrl, img } = item;
 				return (
-					<div key={_id} className='col-sm-3 pb-4'>
+					<div key={_id} className='col-sm-4 pb-4'>
 						{
 							<ProjectCard
 								title={title}
@@ -35,7 +35,7 @@ class Project extends Component {
 	}
 	render() {
 		return (
-			<div>
+			<div className='mb-auto'>
 				<h2 className='expand-lg'>Projects</h2>
 				<div className='row '>{this.renderProjects()}</div>
 			</div>

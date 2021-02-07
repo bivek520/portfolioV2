@@ -6,7 +6,7 @@ import './landingPage.css';
 class LandingPage extends Component {
 	render() {
 		return (
-			<div className='container-fluid bg-1'>
+			<div className='container-fluid bg-1 mb-5'>
 				<div className='text-center'>
 					<img src={img} className='img-fluid pb-5' width='350' height='236' alt='...' />
 				</div>

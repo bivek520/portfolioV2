@@ -6,7 +6,7 @@ import './navBar.css';
 const NavBar = () => {
 	return (
 		<nav className='navbar navbar-expand-lg navbar-light bg-light sticky-top'>
-			<Link className='navbar-brand' to='/portfolioV2'>
+			<Link className='navbar-brand' to='/'>
 				Bivek Shrestha
 			</Link>
 			<button
@@ -22,14 +22,12 @@ const NavBar = () => {
 			</button>
 			<div className='collapse navbar-collapse' id='navbarNavAltMarkup'>
 				<div className='navbar-nav ml-auto'>
-					<NavLink className='nav-item nav-link' to='/education'>
-						Education
-					</NavLink>
 					<NavLink className='nav-item nav-link' to='/project'>
 						Project
 					</NavLink>
-					<NavLink className='nav-item nav-link' to='/about'>
-						About
+
+					<NavLink className='nav-item nav-link' to='/resume'>
+						Resume
 					</NavLink>
 				</div>
 			</div>
