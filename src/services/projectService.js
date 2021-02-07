@@ -1,27 +1,82 @@
+// const projects = [
+// 	{
+// 		_id: '1',
+// 		title: 'check-your-air',
+// 		description: ' This app monitors the air quality of certain cities of Nepal',
+// 		githubURL: 'https://github.com/bivek520/check_your_air',
+// 		liveDemoUrl: 'https://bivek520.github.io/check_your_air/',
+// 		imgLink: '/portfolioV2/static/media/check_your_air.283f7c69.png',
+// 	},
+// 	{
+// 		_id: '2',
+// 		title: 'SplitApp',
+// 		description: 'This program simplifies splitting bill between roommates, groups, friends and family.',
+// 		githubURL: 'https://github.com/bivek520/SplitApp',
+// 		liveDemoUrl: '',
+// 		imgLink: '/portfolioV2/static/media/splitApp.ef5fcd49.png',
+// 	},
+// 	{
+// 		_id: '3',
+// 		title: 'PokerPlus',
+// 		description: ' A client-server based multiplayer player game that is based on 5 card poker.',
+// 		githubURL: 'https://github.com/bivek520/PokerPlus',
+// 		liveDemoUrl: '',
+// 		imgLink: '/portfolioV2/static/media/poker.42c36001.png',
+// 	},
+// 	{
+// 		_id: '4',
+// 		title: 'tic-tac-toe',
+// 		description: 'Game played by AI which uses MiniMax Algorithm',
+// 		githubURL: 'https://github.com/bivek520/tic-tac-toe',
+// 		liveDemoUrl: 'https://www.linkedin.com/feed/update/urn:li:activity:6676133731167739905/',
+// 		imgLink: '/portfolioV2/static/media/tic-tac-screen.ec0824de.png ',
+// 	},
+// 	{
+// 		_id: '5',
+// 		title: 'tic-tac-toe',
+// 		description: 'Game played by AI which uses MiniMax Algorithm',
+// 		githubURL: 'https://github.com/bivek520/tic-tac-toe',
+// 		liveDemoUrl: 'https://www.linkedin.com/feed/update/urn:li:activity:6676133731167739905/',
+// 		imgLink: '/assets/images/Tic-tac-screen.png ',
+// 	},
+// ];
+
+// export function getProject() {
+// 	return projects;
+// }
+
 const projects = [
 	{
 		_id: '1',
-		title: 'tic-tac-toe',
-		description:
-			" Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
-		githubURL: 'https://github.com/bivek520/tic-tac-toe',
-		liveDemoUrl: 'https://www.linkedin.com/feed/update/urn:li:activity:6676133731167739905/',
+		title: 'check-your-air',
+		description: ' This app monitors the air quality of certain cities of Nepal',
+		githubURL: 'https://github.com/bivek520/check_your_air',
+		liveDemoUrl: 'https://bivek520.github.io/check_your_air/',
+		img: 'Check_your_air.png',
 	},
 	{
 		_id: '2',
-		title: 'Terminator',
-		description:
-			" Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
-		githubURL: '6',
+		title: 'SplitApp',
+		description: 'This program simplifies splitting bill between roommates, groups, friends and family.',
+		githubURL: 'https://github.com/bivek520/SplitApp',
 		liveDemoUrl: '',
+		img: 'SplitApp.png',
 	},
 	{
 		_id: '3',
-		title: 'Terminator',
-		description:
-			" Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
-		githubURL: '6',
+		title: 'PokerPlus',
+		description: ' A client-server based multiplayer player game that is based on 5 card poker.',
+		githubURL: 'https://github.com/bivek520/PokerPlus',
 		liveDemoUrl: '',
+		img: 'Poker.png',
+	},
+	{
+		_id: '4',
+		title: 'tic-tac-toe',
+		description: 'Game played by AI which uses MiniMax Algorithm',
+		githubURL: 'https://github.com/bivek520/tic-tac-toe',
+		liveDemoUrl: 'https://www.linkedin.com/feed/update/urn:li:activity:6676133731167739905/',
+		img: 'Tic-tac-screen.png',
 	},
 ];
 

@@ -1,26 +1,24 @@
-import { CardTitle, CardText, CardActions, Button, CardMenu, IconButton, Card } from 'react-mdl';
-
-const ProjectCard = () => {
+const ProjectCard = ({ title, text, githubURL, LiveDemoUrl, img }) => {
+	console.log(process.env.PUBLIC_URL + `/images/${img}`);
 	return (
-		<Card shadow={6} style={{ minWidth: '450', margin: 'auto' }}>
-			<CardTitle
-				style={{
-					color: '#fff',
-					height: '176px',
-					background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover',
-				}}
-			>
-				Welcome
-			</CardTitle>
-			<CardText>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend
-				lacinia...
-			</CardText>
-			<CardActions border>
-				<Button colored>GitHub</Button>
-				<Button colored>Live Demo</Button>
-			</CardActions>
-		</Card>
+		<div className='card h-100'>
+			<img src={process.env.PUBLIC_URL + `/images/${img}`} className='card-img-top .img-fluid' alt='...' />
+			<div className='card-body '>
+				<h5 className='card-title'>{title}</h5>
+				<p className='card-text'>{text}</p>
+
+				<div className='align-self-end'>
+					<a href={githubURL} rel='noreferrer' target='_blank' className='btn btn-primary'>
+						GitHub
+					</a>
+					{LiveDemoUrl && (
+						<a href={LiveDemoUrl} rel='noreferrer' target='_blank' className='btn btn-primary mx-2'>
+							Live Demo
+						</a>
+					)}
+				</div>
+			</div>
+		</div>
 	);
 };
 
