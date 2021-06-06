@@ -21,7 +21,7 @@ class LandingPage extends Component {
 						<hr />
 
 						<p className='text-center text-white'>
-							C | C++ | Python | SQL | JavaScript | React | Laravel | MongoDB{' '}
+							C | C++ | Python | SQL | JavaScript | React | Laravel | Linux | Docker{' '}
 						</p>
 						<div className='text-center'>
 							<a
